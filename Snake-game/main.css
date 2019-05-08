@@ -1,0 +1,10 @@
+body {
+    background-image: url('img/201503021732385978_0.jpg');
+    height: calc(100vh - 4rem);
+    background-size: cover;
+}
+.parent {
+    margin: 0 auto;
+    width: 608px;
+    height: 608px;
+} 
