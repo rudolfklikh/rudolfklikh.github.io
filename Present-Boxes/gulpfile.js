@@ -35,7 +35,7 @@ async function watch() {
 }
 
 async function clean() {
-    del(['build/*']);
+    del(['build/css', 'build/js']);
 }
 
 gulp.task('build',  gulp.series(clean, gulp.parallel(styles, script)));
