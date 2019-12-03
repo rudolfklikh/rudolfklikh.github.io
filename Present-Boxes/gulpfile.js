@@ -3,7 +3,7 @@ const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const GulpAutoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
-const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify-es').default;
 const del = require('del');
 
 
@@ -23,9 +23,7 @@ function styles() {
 function script() {
     return gulp.src('./src/js/main.js')
     .pipe(concat('main.js'))
-    .pipe(uglify({
-        toplevel: true
-    }))
+    .pipe(uglify())
     .pipe(gulp.dest('./build/js'));
 }
 

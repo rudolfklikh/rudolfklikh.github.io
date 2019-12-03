@@ -29,13 +29,13 @@
                             <li><a href="#" class="header__a"><span>Złóż zamówienie</span></a></li>
                         </ul>
                     </div>
-                    <a href="#" data-target="slide-out" class="sidenav-trigger header__burger"><i
+                    <a href="#" data-target="slide-out" id="burger" class="sidenav-trigger header__burger"><i
                             class="material-icons">menu</i></a>
                 </div>
             </div>
         </div>
-        <ul id="slide-out" class="sidenav header__nav-mobile">
-            <a href="#" data-target="slide-out" class="sidenav-close header__burger-close"><i
+        <ul id="slide-out" class="sidenav header__nav-mobile" data-backdrop="static" data-keyboard="false">
+            <a data-target="slide-out" id="close_burger" class="sidenav-close header__burger-close"><i
                     class="material-icons">clear</i></a>
             <ul>
                 <li><a href="#" class="header__a"><span>Strona Główna</span></a></li>
@@ -47,8 +47,8 @@
     </header>
     <div class="container-fluid header__wrapper-background">
         <div class="row">
-            <section class="header__background col l6 xl6"></section>
-            <section class="header__background2 col l6 xl6 m12 s12">
+            <section class="header__background col l6 xl6 parallax"></section>
+            <section class="header__background2 col l6 xl6 m12 s12 parallax">
                 <div class="header__text-wrapper">
                     <h2 class="header__h2">Cześć!</h2>
                     <div class="custom__hr">
@@ -61,6 +61,64 @@
             </section>
         </div>
     </div>
+
+    <section class="about__us">
+        <div class="container-fluid">
+            <div class="row about__us-row">
+                <div class="col l6 xl6 m12 s12  about__us-text-wrapper">
+                    <div>
+                        <h2 class="about__us-h2">Jak działamy?</h2>
+                        <div class="custom__hr-about">
+                            <span></span>
+                        </div>
+                        <div class="col s6 about__us-title-block">
+                            <span class="about__us-numbers">1</span>
+                            <p class="about__us-paragraphs">Wybierasz cenę</p>
+                        </div>
+                        <div class="col s6 about__us-title-block">
+                            <span class="about__us-numbers">2</span>
+                            <p class="about__us-paragraphs">Opowiadasz o odbiorcy prezentu</p>
+                        </div>
+                        <div class="col s6 about__us-title-block hr__block">
+                            <div class="custom__hr-about">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="col s6 about__us-title-block hr__block">
+                            <div class="custom__hr-about">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="col s6 about__us-title-block">
+                            <span class="about__us-numbers">3</span>
+                            <p class="about__us-paragraphs">Wskazujesz uwagi co do zawartości</p>
+                        </div>
+                        <div class="col s6 about__us-title-block">
+                            <span class="about__us-numbers">4</span>
+                            <p class="about__us-paragraphs">Otrzymujesz personalizowane pudełko</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l6 xl6 m12 s12 about__us-gallery">
+                    <div>
+                        <div class="col l4 xl4 m6 s6 img__block"><img src="./build/img/1.jpg"></div>
+                        <div class="col l4 xl4 m6 s6 img__block"><img src="./build/img/2.jpg"></div>
+                        <div class="col l4 xl4 m6 s6 img__block"><img src="./build/img/3.jpg"></div>
+                    </div>
+                    <div>
+                        <div class="col l4 xl4 m6 s6 img__block"><img src="./build/img/4.jpg"></div>
+                        <div class="col l4 xl4 m6 s6 img__block"><img src="./build/img/5.jpg"></div>
+                        <div class="col l4 xl4 m6 s6 img__block"><img src="./build/img/6.jpg"></div>
+                    </div>
+                    <div>
+                        <div class="col l4 xl4 m6 s6 img__block"><img src="./build/img/7.jpg"></div>
+                        <div class="col l4 xl4 m6 s6 img__block"><img src="./build/img/8.jpg"></div>
+                        <div class="col l4 xl4 m6 s6 img__block"><img src="./build/img/9.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
