@@ -5,27 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Pudełka na prezenty | CUDO</title>
     <link rel="stylesheet" href="build/css/main.css">
     <link rel="stylesheet" href="build/lib/materialize.min.css">
-
-    <script src="build/js/main.js" defer></script>
+    <script src="build/lib/jquery.min.js" defer></script>
     <script src="build/lib/materialize.min.js" defer></script>
+    <script src="build/js/main.js" defer></script>
 </head>
 
 <body>
-    <h1>Hola How are uff</h1>
-    <h1>Hello</h1>
-    Big Moneyfsafasasffqwfqwfwq
-    qwfqwfwq
-    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-        <i class="material-icons right"></i>
-    </button>
-    <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
-    <div class="progress">
-        <div class="indeterminate"></div>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col s12 header__wrapper">
+                    <a href="#">
+                        <img src="./build/img/3.png">
+                    </a>
+                    <div class="header__nav col s5">
+                        <ul>
+                            <li><a href="#" class="header__a"><span>Strona Główna</span></a></li>
+                            <li><a href="#" class="header__a"><span>Informacja</span></a></li>
+                            <li><a href="#" class="header__a"><span>O nas</span></a></li>
+                            <li><a href="#" class="header__a"><span>Złóż zamówienie</span></a></li>
+                        </ul>
+                    </div>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger header__burger"><i
+                            class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </div>
+        <ul id="slide-out" class="sidenav header__nav-mobile">
+            <a href="#" data-target="slide-out" class="sidenav-close header__burger-close"><i
+                    class="material-icons">clear</i></a>
+            <ul>
+                <li><a href="#" class="header__a"><span>Strona Główna</span></a></li>
+                <li><a href="#" class="header__a"><span>Informacja</span></a></li>
+                <li><a href="#" class="header__a"><span>O nas</span></a></li>
+                <li><a href="#" class="header__a"><span>Złóż zamówienie</span></a></li>
+            </ul>
+        </ul>
+    </header>
+    <div class="container-fluid header__wrapper-background">
+        <div class="row">
+            <section class="header__background col l6 xl6"></section>
+            <section class="header__background2 col l6 xl6 m12 s12">
+                <div class="header__text-wrapper">
+                    <h2 class="header__h2">Cześć!</h2>
+                    <div class="custom__hr">
+                        <span></span>
+                    </div>
+                    <p class="header__p">CUDO PREZENT - to serwis wyjątkowych personalizowanych prezentów.</p>
+                    <div class="custom__hr"></div>
+                    <a class="header__button" href="#">Więcej</a>
+                </div>
+            </section>
+        </div>
     </div>
-
 </body>
 
 </html>

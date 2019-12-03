@@ -1,1 +1,1 @@
-console.log(4/2);
+document.addEventListener("DOMContentLoaded",function(){var e=document.querySelectorAll(".sidenav");M.Sidenav.init(e,{edge:"right"})});

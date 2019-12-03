@@ -32,6 +32,7 @@ function script() {
 async function watch() {
     gulp.watch('./src/scss/main.scss', styles);
     gulp.watch('./src/js/main.js', script);
+    gulp.watch('./src/scss/**/**/*.scss', styles);
 }
 
 async function clean() {
