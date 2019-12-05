@@ -8,7 +8,9 @@
     <title>Pudełka na prezenty | CUDO</title>
     <link rel="stylesheet" href="build/css/main.css">
     <link rel="stylesheet" href="build/lib/materialize.min.css">
+    <link rel="stylesheet" href="build/lib/fm.revealator.jquery.min.css">
     <script src="build/lib/jquery.min.js" defer></script>
+    <script src="build/lib/fm.revealator.jquery.min.js" defer></script>
     <script src="build/lib/materialize.min.js" defer></script>
     <script src="build/js/main.js" defer></script>
 </head>
@@ -22,9 +24,9 @@
                         <img src="./build/img/3.png">
                     </a>
                     <div class="header__nav col s5">
-                        <ul>
+                        <ul class="section">
                             <li><a href="#" class="header__a"><span>Strona Główna</span></a></li>
-                            <li><a href="#" class="header__a"><span>Informacja</span></a></li>
+                            <li><a href="#information" class="header__a">Informacja</a></li>
                             <li><a href="#" class="header__a"><span>O nas</span></a></li>
                             <li><a href="#" class="header__a"><span>Złóż zamówienie</span></a></li>
                         </ul>
@@ -39,7 +41,7 @@
                     class="material-icons">clear</i></a>
             <ul>
                 <li><a href="#" class="header__a"><span>Strona Główna</span></a></li>
-                <li><a href="#" class="header__a"><span>Informacja</span></a></li>
+                <li><a href="#information" class="header__a"><span>Informacja</span></a></li>
                 <li><a href="#" class="header__a"><span>O nas</span></a></li>
                 <li><a href="#" class="header__a"><span>Złóż zamówienie</span></a></li>
             </ul>
@@ -56,16 +58,16 @@
                     </div>
                     <p class="header__p">CUDO PREZENT - to serwis wyjątkowych personalizowanych prezentów.</p>
                     <div class="custom__hr"></div>
-                    <a class="header__button" href="#">Więcej</a>
+                    <a class="header__button" href="#information">Więcej</a>
                 </div>
             </section>
         </div>
     </div>
 
-    <section class="about__us">
+    <section class="about__us section scrollspy" id="information">
         <div class="container-fluid">
             <div class="row about__us-row">
-                <div class="col l6 xl6 m12 s12  about__us-text-wrapper">
+                <div class="col l6 xl6 m12 s12  about__us-text-wrapper  revealator-slideleft revealator-delay2">
                     <div>
                         <h2 class="about__us-h2">Jak działamy?</h2>
                         <div class="custom__hr-about">
@@ -75,7 +77,7 @@
                             <span class="about__us-numbers">1</span>
                             <p class="about__us-paragraphs">Wybierasz cenę</p>
                         </div>
-                        <div class="col s6 about__us-title-block">
+                        <div class="col s6 about__us-title-block section scrollspy">
                             <span class="about__us-numbers">2</span>
                             <p class="about__us-paragraphs">Opowiadasz o odbiorcy prezentu</p>
                         </div>
@@ -99,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col l6 xl6 m12 s12 about__us-gallery">
+                <div class="col l6 xl6 m12 s12 about__us-gallery revealator-zoomin">
                     <div>
                         <div class="col l4 xl4 m6 s6 img__block">
                             <a img-number="1" class="modal-trigger modal__links" href="#modal1">
@@ -174,6 +176,57 @@
             </div>
         </div>
     </section>
+    <section class="information">
+        <div class="container-fluid">
+            <div class="row information__row">
+                <div class="col l6 xl6 information__block-img">
+                    <img class="information__img" src="./build//img/info__1.jpg">
+                </div>
+                <div class="col l6 xl6 s12 m12 information__block-text">
+                    <div>
+                        <div class="col s6 about__us-title-block">
+                            <img src="./build/img/gift.svg">
+                            <p class="about__us-paragraphs">Czas Realizacji Zamówienia</p>
+                            <p class="about__us-paragraphs">Przygotujemy prezent maksymalnie za 2 dni</p>
+                        </div>
+                        <div class="col s6 about__us-title-block">
+                            <span class="about__us-numbers">3</span>
+                            <p class="about__us-paragraphs">Opłata</p>
+                            <p class="about__us-paragraphs">Pracujemy po pełnej lub częściowej przedpłacie.</p>
+                        </div>
+                        <div class="col s6 about__us-title-block hr__block hr__wrapper">
+                            <div class="custom__hr-about info__color">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="col s6 about__us-title-block hr__block hr__wrapper">
+                            <div class="custom__hr-about info__color">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="col s6 about__us-title-block">
+                                <span class="about__us-numbers">4</span>
+                                <p class="about__us-paragraphs">Opakowanie</p>
+                                <p class="about__us-paragraphs">Świąteczne prezentowe opakowanie już wchodzi w cenę
+                                    personalizowanego pudełka</p>
+                        </div>
+                        <div class="col s6 about__us-title-block">
+                            <span class="about__us-numbers">2</span>
+                            <p class="about__us-paragraphs">Dostawa</p>
+                            <p class="about__us-paragraphs">Wysyłamy na terenie całej Polski - dostawa do 3 dni, w Łodzi
+                                - dostarczymy wszystko pod Wasze drzwi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- MODAL WINDOW -->
     <div id="modal1" class="modal about__us-modal">
         <div class="container-fluid">
             <div class="row">
