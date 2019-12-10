@@ -16,13 +16,13 @@ $warnings = $_POST['user__warnings'];
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'rklikh@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'Rudik147'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = 'cudo.prezent@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = '@Ira1999@'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('rklikh@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('rklikh@mail.ru');     // Кому будет уходить письмо 
+$mail->setFrom('cudo.prezent@mail.ru'); // от кого будет уходить письмо?
+$mail->addAddress('cudo.prezent@mail.ru');     // Кому будет уходить письмо 
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -31,13 +31,13 @@ $mail->addAddress('rklikh@mail.ru');     // Кому будет уходить �
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'STEFAN JEBAT ZAKAZALY BIGOOOOM';
+$mail->Subject = 'Андрій, прийшло замовлення від клієнта !';
 $newPrice = $price2;
 if ($price != "") {
     $newPrice = $price;
 }
 
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Цена: ' .$newPrice .'INFA: ' .$info .'WARNINGS :' .$warnings;
+$mail->Body    = '' .$name . ' залишив заявку,<br> його телефон ' .$phone. '<br>Ціна на яку розраховують: ' .$newPrice .'<br>Інформація: ' .$info .'Попередження :' .$warnings;
 $mail->AltBody = '';
 
 $message = "";
