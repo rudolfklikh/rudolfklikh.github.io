@@ -68,7 +68,7 @@
         <div class="container-fluid">
             <div class="row about__us-row">
                 <div
-                    class="col l6 xl6 m12 s12  about__us-text-wrapper  revealator-slideleft revealator-delay2 revealator-once">
+                    class="col l6 xl6 m12 s12  about__us-text-wrapper  revealator-slidedown revealator-delay2 revealator-once">
                     <div>
                         <h2 class="about__us-h2">Jak działamy?</h2>
                         <div class="custom__hr-about">
@@ -262,7 +262,7 @@
                     <img class="form__img" src="./build/img/form.jpg">
                 </div>
                 <div class="col s12 m12 l6 xl6 form__text-block">
-                    <div>
+                    <div class="form__wrapper">
                         <h2 class="form__title">Złożyć Zamówienie</h2>
                         <form>
                             <div class="input-field col s12">
@@ -289,50 +289,34 @@
                                 <input type="text" id="warnings" class="autocomplete form__input">
                                 <label for="warnings">Uwagi co do zawartości i opakowania pudełka</label>
                             </div>
-                            <!-- <textarea name="" id="" cols="30" rows="10">
+                            <textarea class="form__textarea" name="" id="" cols="30" rows="10">
 
-                            </textarea> -->
+                            </textarea>
+
                             <div class="form__mobile-wrapper">
-                                <a class="form__button">Potwierdzić</a>
+                                <button class="form__button" onclick="checkValidation(event)">Potwierdzić</button>
                             </div>
                         </form>
+                    </div>
+                    <div class="form__after-submit">
+                        <h3 class="form__title">Dziękujemy za zamówienie! <br> Skontaktujemy się wkrótce</h3>
                     </div>
                 </div>
             </div>
         </div>
-
-        <form action="/build/lib/send.php" method="post">
-            <div>
-                <label for="say">What greeting do you want to say?</label>
-                <input name="say" id="say" value="Hi">
-            </div>
-            <div>
-                <label for="to">Who do you want to say it to?</label>
-                <input name="to" id="to" value="Mom">
-            </div>
-            <div>
-                <button>Send my greetings</button>
-            </div>
-        </form>
     </section>
     <section class="opinions revealator-zoomin revealator-once">
         <div class="container-fluid">
             <div class="row opinions__row">
                 <div class="col s12">
-                    <h2 class="form__title">Opinie</h2>
+                    <h2 class="form__title opinions__title">Opinie</h2>
                     <div class="carousel">
-                        <a class="carousel-item" href="#two!"><img src="./build/img/1.jpg"></a>
-                        <a class="carousel-item" href="#three!"><img src="./build/img/2.jpg"></a>
-                        <a class="carousel-item" href="#four!"><img src="./build/img/3.jpg"></a>
-                        <a class="carousel-item" href="#five!"><img src="./build/img/4.jpg"></a>
-                        <a class="carousel-item" href="#six!"><img src="./build/img/5.jpg"></a>
-                        <a class="carousel-item" href="#seven!"><img src="./build/img/6.jpg"></a>
-                        <a class="carousel-item" href="#eight!"><img src="./build/img/7.jpg"></a>
-                        <a class="carousel-item" href="#nine"><img src="./build/img/8.jpg"></a>
-                        <a class="carousel-item" href="#ten!"><img src="./build/img/9.jpg"></a>
-                        <a class="carousel-item" href="#eleven!"><img src="./build/img/1.jpg"></a>
-                        <a class="carousel-item" href="#twelve!"><img src="./build/img/2.jpg"></a>
-                        <a class="carousel-item" href="#fourteen!"><img src="./build/img/3.jpg"></a>
+                        <a class="carousel-item" href="#two!"><img src="./build/img/op_.png"></a>
+                        <a class="carousel-item" href="#three!"><img src="./build/img/op_1.png"></a>
+                        <a class="carousel-item" href="#four!"><img src="./build/img/op_2.png"></a>
+                        <a class="carousel-item" href="#five!"><img src="./build/img/op_3.png"></a>
+                        <a class="carousel-item" href="#seven!"><img src="./build/img/op_4.png"></a>
+                        <a class="carousel-item" href="#eight!"><img src="./build/img/op_5.png"></a>
                     </div>
                 </div>
             </div>
@@ -450,21 +434,25 @@
         </div>
     </footer>
 
+
+    <!-- Button -->
+    <a href="#" title="Вернуться к началу" id="toTop" class="topbutton"> <i class="material-icons">keyboard_arrow_up</i></a>
+
     <!-- MODAL WINDOW -->
     <div id="modal1" class="modal about__us-modal">
         <div class="container-fluid">
             <div class="row">
                 <div class="col s12 img__wrapper">
                     <div class="modal__wrapper">
-                        <h3>Lorem Lorem</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos numquam error
-                            doloremque, deserunt mollitia tenetur quasi neque est fuga esse veritatis iste repudiandae
-                            obcaecati, consequatur ab eos eligendi tempore vero!
+                        <p id="modalText">
                         </p>
                         <p class="btn"><a href="https://vk.com/id393618098">Więcej</a></p>
                     </div>
                     <img id="galleryImg" src="">
+                </div>
+                <div class="icon__modal">
+                    <i class="material-icons" id="mob__modal">keyboard_arrow_up</i>
+                    <i class="material-icons" id="mob__modal2">keyboard_arrow_down</i>
                 </div>
             </div>
         </div>
