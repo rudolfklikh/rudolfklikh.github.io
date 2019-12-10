@@ -1,17 +1,8 @@
 <?php
-$fio = $_POST['fio'];
-$email = $_POST['email'];
-$fio = htmlspecialchars($fio);
-$email = htmlspecialchars($email);
-$fio = urldecode($fio);
-$email = urldecode($email);
-$fio = trim($fio);
-$email = trim($email);
-//echo $fio;
-//echo "<br>";
-//echo $email;
-if (mail("example@mail.ru", "Заявка с сайта", "ФИО:".$fio.". E-mail: ".$email ,"From: example2@mail.ru \r\n"))
- {     echo "сообщение успешно отправлено";
-} else {
-    echo "при отправке сообщения возникли ошибки";
-}?>
+  // The global $_POST variable allows you to access the data sent with the POST method by name
+  // To access the data sent with the GET method, you can use $_GET
+  $say = htmlspecialchars($_POST['say']);
+  $to  = htmlspecialchars($_POST['to']);
+
+  echo  $say, ' ', $to;
+?>
