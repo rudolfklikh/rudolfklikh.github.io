@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="build/lib/fm.revealator.jquery.min.css">
     <script src="build/lib/jquery.min.js" defer></script>
     <script src="build/lib/fm.revealator.jquery.min.js" defer></script>
+    <script src="build/lib/jquery.maskedinput.min.js" defer></script>
     <script src="build/lib/materialize.min.js" defer></script>
     <script src="build/js/main.js" defer></script>
 </head>
@@ -265,15 +266,15 @@
                         <h2 class="form__title">Złożyć Zamówienie</h2>
                         <form id="myForm">
                             <div class="input-field col s12">
-                                <input type="text" id="name" name="user__name" class="autocomplete form__input">
+                                <input type="text" id="name" name="user__name" class="autocomplete form__input" required>
                                 <label for="name">Imię</label>
                             </div>
                             <div class="input-field col s12">
-                                <input type="text" id="number" name="user__phone" class="autocomplete form__input">
+                                <input type="text" id="number" name="user__phone" class="autocomplete form__input" required>
                                 <label for="number">Numer telefonu</label>
                             </div>
                             <div class="input-field col s12 computer__version">
-                                <input type="text" id="cena" name="user__price" class="autocomplete form__input">
+                                <input type="text" id="cena" name="user__price" class="autocomplete form__input" minlength="2" maxlength="4" required>
                                 <label for="cena">Cena (od 60zł)</label>
                             </div>
                             <div class="input-field col s12 mobile__line">
@@ -291,6 +292,8 @@
                                     rows="10"></textarea>
                             </div>
                         </form>
+                        <div class="form__error">
+                        </div>
                         <div class="form__mobile-wrapper">
                             <button id="formSubmit" class="form__button">Potwierdzić</button>
                         </div>
