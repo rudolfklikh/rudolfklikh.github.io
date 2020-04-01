@@ -339,7 +339,7 @@ let PlanetCardComponent = class PlanetCardComponent {
     }
     set planet(planet) {
         this._planet = planet;
-        this.imgLink = `../../../assets/${planet.name}.png`;
+        this.imgLink = `/dist/Planets/assets/${planet.name}.png`;
     }
     ngOnInit() {
     }

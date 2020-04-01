@@ -374,7 +374,7 @@ var PlanetCardComponent = /** @class */ (function () {
         },
         set: function (planet) {
             this._planet = planet;
-            this.imgLink = "../../../assets/" + planet.name + ".png";
+            this.imgLink = "/dist/Planets/assets/" + planet.name + ".png";
         },
         enumerable: true,
         configurable: true
