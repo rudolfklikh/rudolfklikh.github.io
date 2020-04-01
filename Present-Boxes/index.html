@@ -14,6 +14,26 @@
     <script src="build/lib/jquery.maskedinput.min.js" defer></script>
     <script src="build/lib/materialize.min.js" defer></script>
     <script src="build/js/main.js" defer></script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '582662688950909');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=582662688950909&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
@@ -266,11 +286,13 @@
                         <h2 class="form__title">Złożyć Zamówienie</h2>
                         <form id="myForm">
                             <div class="input-field col s12">
-                                <input type="text" id="name" name="user__name" class="autocomplete form__input" required>
+                                <input type="text" id="name" name="user__name" class="autocomplete form__input"
+                                    required>
                                 <label for="name">Imię</label>
                             </div>
                             <div class="input-field col s12">
-                                <input type="text" id="number" name="user__phone" class="autocomplete form__input" required>
+                                <input type="text" id="number" name="user__phone" class="autocomplete form__input"
+                                    required>
                                 <label for="number">Numer telefonu</label>
                             </div>
                             <div class="input-field col s12 computer__version">
@@ -283,7 +305,9 @@
                                     id="test5" min="60" max="500" />
                             </div>
                             <div class="input-field col s12 last__input">
-                                <input type="text" placeholder="Co chcielibyście tam napewno zobaczyć / czego w żadnym razie nie umieszczać / kolor" id="warnings" name="user__warnings" class="autocomplete form__input">
+                                <input type="text"
+                                    placeholder="Co chcielibyście tam napewno zobaczyć / czego w żadnym razie nie umieszczać / kolor"
+                                    id="warnings" name="user__warnings" class="autocomplete form__input">
                                 <label for="warnings">Uwagi co do zawartości i opakowania pudełka</label>
                             </div>
                             <div class="input-field col s12">
@@ -447,7 +471,8 @@
                     <div class="modal__wrapper">
                         <p id="modalText">
                         </p>
-                        <p class="btn"><a  target="_blank" href="https://www.instagram.com/cudo.prezent/?hl=pl">Zapytaj się o cenę</a></p>
+                        <p class="btn"><a target="_blank" href="https://www.instagram.com/cudo.prezent/?hl=pl">Zapytaj
+                                się o cenę</a></p>
                     </div>
                     <img id="galleryImg" src="">
                 </div>
